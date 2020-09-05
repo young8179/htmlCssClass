@@ -1,0 +1,78 @@
+main {
+    background-color: rgb(163, 228, 166);;
+}
+
+#left-side{
+    background-color: rgb(130, 130, 255);
+    
+}
+.left-top {
+    padding-top: 50%;
+}
+.col-2 p a{
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+.color {
+    background-color: lightgray;
+    margin: 5% 10% 5% 10%
+}
+
+h1 {
+    font-size: 80px;
+    
+}
+
+#fiv-pic{
+    margin-left:25%;
+    margin-right:25%;
+    padding-top: 1%;
+}   
+
+span {
+    color: blue;
+}
+
+.row h1 {
+    padding-top: 2%;
+}
+
+.color p img {
+    width: 45%;
+    float:left;
+}
+
+.margin {
+    margin: 5%;
+}
+
+
+
+
+
+@media only screen and (max-width: 1140px) {
+    h1 {
+        font-size: 40px;
+    }
+    .col-2 p a {
+        font-size: small;
+    }
+    .row .col-2 img{
+        width: 300px;
+    }   
+
+  }
+
+  @media only screen and (max-width: 620px) {
+    h1 {
+        font-size: 20px;
+        
+    }
+    .col-2 p a {
+        font-size: x-small;
+    }
+    .color p {
+        font-size: small;
+    }
+
+  }
