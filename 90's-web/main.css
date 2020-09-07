@@ -1,88 +1,92 @@
-
-.container {
-    /*background-image: url("./image1/background2_1.png"); */
+main {
     background-color: rgb(163, 228, 166);
     
 }
 
-.header-box {
+#left-side{
+    background-color: rgb(130, 130, 255);
     
-    width: 100%;
-    
-    text-align: center;
-    font-size: 50px;
-    
+}
+.left-top {
+    padding-top: 50%;
+}
+.col-2 p a{
+    font-size: large;
     color: rgb(0, 0, 0);
+}
+.color {
+    background-color: lightgray;
+    margin: 5% 10% 5% 10%;
     
-  }
-
-header h1 span{
-    color: red;
+    height: 70%;
+   
 }
 
-.mascot{
-    text-align: center;
-}
 
-.main  {
-    
+h1 {
+    font-size: 80px;
     
 }
-.sidebar-box {
-    height: 100%;
-    width: 10%;
-    position: fixed;
-    
-    top: 0;
-    left: 0;
-    background-color: rgb(25, 0, 255);
-    overflow-x: hidden;
-    padding-top: 20px;
 
-  }
+#fiv-pic{
+    margin-left:25%;
+    margin-right:25%;
+    padding-top: 1%;
+}   
 
-  .sidebar-box-right {
-    height: 100%;
-    width: 10%;
-    position: fixed;
-    
-    top: 0;
-    right: 0;
-    background-color: rgb(163, 228, 166);
-    overflow-x: hidden;
-    padding-top: 20px;
-
-  }
-
-  .sidebar-box p {
-      font-size: 40px;
-      color: black;
-      text-align: center;
-
-  }
-
-  
-      
- 
-
-  .main-text-box {
-      background-color: lightgray;
-      width: 60%;
-      height: 85%;
-      left: 21%;
-      top: 34%;
-    
-      position: absolute;
-      margin: auto;
-      padding: 30px;
-      
+span {
+    color: blue;
 }
-.main-text-box img {
+
+.row h1 {
+    padding-top: 2%;
+}
+
+.color p img {
+    width: 45%;
     float:left;
 }
 
-.main-text-box p {
-    font-size: 30px;
-    clear:right;
-    padding: 0px;
+.margin {
+    margin: 5%;
 }
+
+
+
+@media only screen and (max-width: 1140px) {
+    h1 {
+        font-size: 40px;
+    }
+    .col-2 p a {
+        font-size: small;
+    }
+    .row .col-2 img{
+        width: 300px;
+    }   
+
+  }
+
+  @media only screen and (max-width: 620px) {
+    h1 {
+        font-size: 20px;
+        
+    }
+    .col-2 p a {
+        font-size: x-small;
+    }
+    .color p {
+        font-size: small;
+    }
+
+    .color {
+        background-color: lightgray;
+        margin: 5% 10% 5% 10%;
+        overflow: scroll;
+        height: 10%;
+        margin-bottom: 100%;
+        width: 230px;
+    }
+
+    
+    
+  }
