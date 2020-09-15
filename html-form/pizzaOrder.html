@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Order Your Pizza Here</h1>
+    <form>
+        <fieldset>
+            <legend>Crust</legend>
+            <div>
+                <lable for = "Crust">Type of Crust</lable>
+                <select name="Crust" id="Crust">
+                    <option value="" disabled>Choose crust</option>
+                    <option value="">New York-Style</option>
+                    <option value="">Sicilian</option>
+                    <option value="">Focaccia</option>
+                    <option value="">Traditional Pan</option>                
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>topping</legend>
+            <div>
+                <lable for = "ham">Ham</lable>
+                <input type="checkbox" id="ham" name = "topping">  
+            </div>
+            <div>
+                <lable for = "paparoni">paparoni</lable>
+                <input type="checkbox" id="paparoni" name = "topping">  
+            </div>
+            <div>
+                <lable for = "cheese">cheese</lable>
+                <input type="checkbox" id="cheese" name = "topping">  
+            </div>
+            <div>
+                <lable for = "mushroom">mushroom</lable>
+                <input type="checkbox" id="mushroom" name = "topping">  
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Deltivery Or Pick Up</legend>
+            <div>
+               <input type="radio" id="delivery" name = "delivery">
+               <lable for = "delivery">Delivery</lable>
+               <input type="radio" id="Pick Up" name = "Pick Up">
+               <lable for = "Pick Up">Delivery</lable>   
+            </div>
+        </fieldset>      
+        <fieldset>
+            <legend>Address(Only for delivery)</legend>
+            <div Style = "margin-bottom: 10px">
+               <lable for = "addressLine">Address Line</lable>
+               <input type="text" id="addressLine" name = "addressLine" Style =" width: 600px">
+            </div>
+            <div Style = "margin-bottom: 10px">
+               <lable for = "city">citiy</lable>
+               <input type="text" id="city" name = "city" Style =" width: 150px">
+               <lable for = "State">State</lable>
+               <input type="text" id="State" name = "State" Style =" width: 150px">
+               <lable for = "ZipCode">Zip Code</lable>
+               <input type="text" id="ZipCode" name = "ZipCode" Style =" width: 150px">
+            </div>
+            <div Style = "margin-bottom: 10px">
+                <lable for = "name">Name</lable>
+               <input type="text" id="name" name = "name" Style =" width: 300px">
+            </div>
+
+        </fieldset>
+        <div Style = "margin-bottom: 10px">
+            <div>    
+                <lable for = "comments">comments</lable>
+            </div>    
+            <div>    
+                <textarea name="comments" id="comments" placeholder="Addtional Requirments"cols="60" rows="10"></textarea>
+            </div>
+        </div>          
+        <button type="submit">Send it</button>
+        <button type="reset">Reset</button>
+
+    </form>
+    <h1>Payment</h1>
+    <form action="">
+        <fieldset>
+            <legend>Payment</legend>
+            <div>
+                <lable for="owner">Owner</lable>
+                <input type="text" id ="owner" name="owner">
+                <lable for="cvv">CVV</lable>
+                <input type="text" id ="cvv" name="cvv">
+            </div>
+            <div>
+                <lable for="cardNumber">cardNumber</lable>
+                <input type="text" id ="cardNumber" name="cardNumber" style="width: 500px">
+            </div>
+            <div>
+                <lable for="email">email</lable>
+                <input type="email" id ="email" name="email" style="width: 500px" placeholder="abcd@adce.abc">
+            </div>
+            <div>
+                <lable for="ExpirationDate">ExpirationDate</lable>
+                <select name="month" id="month" placeholder ="month">
+                    <option value="" disabled>Month</option>
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                    <option value="">June</option>
+                    <option value="">July</option>
+                    <option value="">August</option>
+                    <option value="">September</option>
+                    <option value="">October</option>
+                    <option value="">November</option>
+                    <option value="">December</option>
+                </select>
+                <select name="years" id="years" placeholder = "year">
+                    <option value="" disabled>years</option>
+                    <option value="">2025</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    
+                </select>
+            </div>
+            <button type="submit">Pay</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
