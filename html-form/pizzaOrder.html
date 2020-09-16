@@ -13,7 +13,7 @@
             <div>
                 <lable for = "Crust">Type of Crust</lable>
                 <select name="Crust" id="Crust">
-                    <option value="" disabled>Choose crust</option>
+                    <option value="" selected disabled>Choose crust</option>
                     <option value="">New York-Style</option>
                     <option value="">Sicilian</option>
                     <option value="">Focaccia</option>
@@ -55,15 +55,15 @@
             <legend>Address(Only for delivery)</legend>
             <div Style = "margin-bottom: 10px">
                <lable for = "addressLine">Address Line</lable>
-               <input type="text" id="addressLine" name = "addressLine" Style =" width: 600px">
+               <input type="text" id="addressLine" name = "addressLine" Style =" width: 400px">
             </div>
             <div Style = "margin-bottom: 10px">
-               <lable for = "city">citiy</lable>
-               <input type="text" id="city" name = "city" Style =" width: 150px">
+               <lable for = "city">city</lable>
+               <input type="text" id="city" name = "city" Style =" width: 50px">
                <lable for = "State">State</lable>
-               <input type="text" id="State" name = "State" Style =" width: 150px">
+               <input type="text" id="State" name = "State" Style =" width: 50px">
                <lable for = "ZipCode">Zip Code</lable>
-               <input type="text" id="ZipCode" name = "ZipCode" Style =" width: 150px">
+               <input type="number" id="ZipCode" name = "ZipCode" Style =" width: 50px">
             </div>
             <div Style = "margin-bottom: 10px">
                 <lable for = "name">Name</lable>
@@ -76,7 +76,7 @@
                 <lable for = "comments">comments</lable>
             </div>    
             <div>    
-                <textarea name="comments" id="comments" placeholder="Addtional Requirments"cols="60" rows="10"></textarea>
+                <textarea name="comments" id="comments" placeholder="Addtional Requirments"cols="50" rows="10"></textarea>
             </div>
         </div>          
         <button type="submit">Send it</button>
@@ -91,7 +91,7 @@
                 <lable for="owner">Owner</lable>
                 <input type="text" id ="owner" name="owner">
                 <lable for="cvv">CVV</lable>
-                <input type="text" id ="cvv" name="cvv">
+                <input type="number" id ="cvv" name="cvv"  pattern="^(100|[1-9][0-9]?)$" title="number between 1 to 100" required>
             </div>
             <div>
                 <lable for="cardNumber">cardNumber</lable>

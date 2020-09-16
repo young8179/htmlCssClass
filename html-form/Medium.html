@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""
+        <div>
+            <lable>name</lable>
+            <input type="text" name="name" id="name" minlength="5" required>
+        </div>
+        <div>
+            <lable>password</lable>
+            <input type="password" name="password" id="password" minlength="6" maxlength="15" required>
+        </div>
+        <div>
+            <lable>email</lable>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <lable>about me</lable>
+            <textarea name="aboutMe" id="aboutMe" maxlength="10"></textarea>
+        </div>
+        <div>
+            <lable>please type: I am a human</lable>
+            <input type="text" name="robot" id="robot" required pattern="I am a human">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

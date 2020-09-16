@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PizzaShack</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>PizzaShack</h1>
+    <form id="orderForm">
+      
+      <!-- -=================================input validation with js======================================= -->
+      <fieldset class="form-group">
+        <legend>Payment Information</legend>
+        <div class="form-group" id="nameBox">
+          <label for="ccName" >Name</label>
+          <input type="text" class="form-control" id="ccName" name="ccName">
+        </div>
+
+        <div class="form-group" id="emailBox">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="form-group" id="cardBox">
+          <label for="cardNumber">Card Number</label>
+          <input type="tel" class="form-control" id="cardNumber" name="cardNumber" >
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="expiry">Expiry</label>
+            <input type="month" class="form-control" id="expiry" name="expiry">
+          </div>
+          <div class="form-group col-md-6" id="ccvBox">
+            <label for="ccv">Security Code</label>
+            <input type="tel" class="form-control" id="ccv" name="ccv">
+          </div>
+        </div>
+      </fieldset>
+  
+      <button id="submitButton" type="submit" class="btn btn-primary">Gimme Pizza</button>
+    </form>
+  </div>
+  <script src="validationJs.js"></script>
+</body>
+</html>
